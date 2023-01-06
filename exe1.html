@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Múltiplos comuns entre 2 inteiros</title>
+</head>
+<body>
+
+<p>Escrever um programa que aceite 2 inteiros <i>a</i> e <i>b</i> como <i>inputs</i>
+do usuário e retorne quais são os múltiplos comuns entre esses 2 inteiros.</p>
+
+<p><i>Obs.: Um múltiplo comum é um número positivo inteiro, diferente de zero, que é múltiplo
+ao mesmo tempo entre 2 ou mais inteiros.</i></p>
+
+<blockquote><pre>
+import java.util.Scanner;
+
+public class Mainz {
+
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Type number A:");
+        int a = scanner.nextInt();
+
+        System.out.println("Type number B:");
+        int b = scanner.nextInt();
+
+        scanner.close();
+        System.out.printf("The common factors between %d and %d are ", a, b);
+
+        for (int i = 1; i <= b; i++) {
+            if (a % i == 0 && b % i == 0) {
+                System.out.print(i + ", ");
+            }
+        }
+    }
+}
+</pre></blockquote>
+
+<p>O código na IDE:</p>
+
+<center>
+    <img src="/pictures/exe1_Eclipse.JPG">
+</center>
+
+<p>Exemplo de um resultado esperado:</p>
+
+<center>
+    <img src="/pictures/exe1.JPG">
+</center>
+
+<p>
+<a href="index.html"> Voltar</a>
+</p>
+
+
+</body>
+</html>
